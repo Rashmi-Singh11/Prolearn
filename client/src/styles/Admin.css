@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef; /* Light background for contrast */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40; /* Dark nav bar */
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #007bff; /* Bright blue background */
+    color: white;
+    border-bottom: 5px solid #f39c12; /* Border for distinction */
+}
+
+.hero h2 {
+    font-size: 2.5em; /* Increase heading size */
+    margin: 0; /* Remove default margin */
+}
+
+.hero p {
+    font-size: 1.2em; /* Increase subtitle size */
+}
+
+.alumni-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.alumni-profile {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Light gradient for profiles */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation on hover */
+}
+
+.alumni-profile:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Position relative for contact info */
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 100px; /* Increase profile image size */
+    height: 100px; /* Increase profile image size */
+    border: 3px solid #f39c12; /* Border around image */
+}
+
+.contact-info {
+    display: none; /* Hide contact info by default */
+    position: absolute; /* Positioning for overlay */
+    bottom: 5px; /* Position it at the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.alumni-profile:hover .contact-info {
+    display: block; /* Show contact info on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40; /* Dark footer */
+    color: white;
+}
+.heading{
+    text-align: center;
+}
